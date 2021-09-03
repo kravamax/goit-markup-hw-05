@@ -89,13 +89,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.header-link.link:hover,
-.header-link.link:focus,
-.footer-link.link:hover,
-.footer-link.link:focus {
-  color: var(--accent-color);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -168,6 +161,7 @@ img {
   margin-right: 10px;
 
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link {
@@ -175,6 +169,8 @@ img {
   align-items: center;
 
   color: #757575;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -192,13 +188,22 @@ img {
 
 .header-link {
   color: #212121;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link.link:hover,
+.header-link.link:focus {
+  color: var(--accent-color);
 }
 
 .contacts-link:hover,
-.contacts-link:focus,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
 .contacts-item:hover .contacts-icon,
 .contacts-item:focus .contacts-icon {
-  color: var(--accent-color);
   fill: var(--accent-color);
 }
 
@@ -253,6 +258,8 @@ img {
   align-items: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -416,6 +423,8 @@ img {
   justify-content: center;
 
   border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -423,14 +432,18 @@ img {
   height: 20px;
 
   fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
-.social-link:focus,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--main-bg-color);
-  background-color: var(--accent-color);
 }
 
 /* ------------------------- CLIENTS -------------------------  */
@@ -441,9 +454,10 @@ img {
 }
 
 .clients-item {
-  /* box-sizing: border-box; */
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:not(:last-child) {
@@ -459,6 +473,8 @@ img {
 
 .icon-clients {
   fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:hover,
@@ -509,6 +525,13 @@ img {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link.link:hover,
+.footer-link.link:focus {
+  color: var(--accent-color);
 }
 
 /* ------------------------- SUBSCRIBE FOOTER -------------------------  */
@@ -561,6 +584,10 @@ img {
   color: #212121;
   background-color: #f5f4fa;
   border-style: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-btn:hover,
@@ -588,6 +615,8 @@ img {
   flex-basis: calc((100% - var(--main-margin) * 3) / 3);
 
   background: #ffffff;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover,
